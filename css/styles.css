@@ -1,0 +1,252 @@
+input[type="button"] {
+	background-color: #008CBA; 
+	border: none;
+	color: white;
+	padding: 5px 20px 5px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	min-width: 50px;
+	border-radius:4px;
+	cursor: pointer;
+}
+
+input[type="button"]:hover {
+	opacity: 0.8;
+}
+
+#panneau_haut {
+	background: linear-gradient(to top, #7AB, #69E);
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 150px;
+}
+
+#panneau_haut .titre {
+	color: blue;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 36px;
+	font-family: Arial;
+}
+
+#panneau_haut img {
+	position: absolute;
+	max-height: 100%
+}
+
+#panneau_haut .logo {
+	left: 5px;
+	top: 5px;
+}
+
+#panneau_haut .golfeur {
+	right: 0;
+	top: 0;
+}
+
+#panneau_haut #connecte {
+	position: absolute;
+	bottom: 5px;
+	left: 265px;
+	margin: 0;
+}
+
+#panneau_gauche {
+	position: absolute;
+	top: 150px;
+	bottom: 0;
+	left: 0;
+	width: 200px;
+}
+
+#panneau_gauche #statistiques {
+	border: 1px solid silver;
+	margin-top: 50px;
+}
+
+#panneau_gauche #statistiques #titre {
+	text-align: center;
+	font-size: 20px;
+	width: 100%;
+	display: block;
+	background: linear-gradient(to top, #7AB, #69E);
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#panneau_gauche #statistiques p {
+	margin-left: 5px;
+}
+
+#panneau_gauche #menu {
+	padding: 5px;
+	margin-top: 45%;
+}
+
+#menu input {
+	display: block;
+	width: 100%;
+}
+
+#menu #lienAdherent {
+	margin-top: 5px;
+}
+
+#panneau_central {
+	position: absolute;
+	top: 150px;
+	left: 200px;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	outline: none;
+}
+
+#reservation, #liste_adherents {
+	border: 3px double silver;
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 95%;
+	table-layout: fixed;
+}
+
+#reservation thead th, #liste_adherents thead th {
+	text-align: center;
+}
+
+#reservation tr td, #reservation tr th, #liste_adherents tr td, #liste_adherents tr th {
+	border: 3px double silver;
+	padding: 5px;
+	height: 30px;
+	line-height:30px;
+}
+
+#reservation .weekend {
+	background-color: gray;
+	color: white;
+}
+
+#reservation td:nth-child(1) {
+	width: 150px;
+}
+
+#reservation td:nth-child(6) {
+	width: 50px;
+	text-align: center;
+}
+
+#reservation .userConnecte {
+	color: red;
+}
+
+#liste_adherents thead tr th {
+	background-color: gray;
+	color: white;
+}
+
+#liste_adherents tbody tr:hover {
+	background-color: #AAA;
+}
+
+#formAdherent, #formMessage {
+	background-color: whitesmoke;
+	width: 500px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid silver;
+	padding: 10px;
+	box-shadow:
+		inset 0 -3em 3em rgba(0,0,0,0.1),
+		0 0 0 2px rgb(255,255,255),
+		0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+#formMessage {
+	text-align: center;
+	color: red;
+	font-weight: bold;
+}
+
+#formAdherent input[type=button] {
+	margin-top: 20px;
+}
+
+#formAdherent #ok {
+	margin-right: 5px;
+}
+
+#formAdherent #erreur {
+	color: red;
+	text-align: center;
+}
+
+#titre {
+	font-size: 18pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+#navigation {
+	padding: 10px;
+}
+
+#ajouteReservation, #supprimeReservation {
+	display: block;
+	margin-left: auto;
+	height: 24px;
+	width: 24px;
+
+	cursor: pointer;
+}
+
+#acces_reservation {
+	cursor: pointer;
+}
+
+/* Page de connexion */
+#page_connexion {
+	background: linear-gradient(to top, #7AB, #69E);
+	width: 500px;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 50px;
+	box-shadow:
+		inset 0 -3em 3em rgba(0,0,0,0.1),
+		0 0 0 2px rgb(255,255,255),
+		0.3em 0.3em 1em rgba(0,0,0,0.3);
+	border-radius:4px;
+}
+
+#page_connexion h2 {
+	text-align: center;
+	font-size: 32px;
+	margin:0;
+	color:white;
+}
+
+#page_connexion table {
+	margin-top:40px;
+	color:white;
+}
+
+#page_connexion #valider {
+	margin-top: 20px;
+	padding: 12px;
+	font-size: 14px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#page_connexion input, #page_connexion label {
+	font-size: 16pt;
+}
